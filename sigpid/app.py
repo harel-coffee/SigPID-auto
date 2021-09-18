@@ -16,8 +16,15 @@ modelo= pickle.load(open('sigpid.pkl','rb'))
 #print(model)
 def sigpid(path):
    try:
+    global lista_permissoes
+    global nome
+    global target_sdk_version
+    global minSdkVersion
     a = APK(path)
     app = a.get_permissions()
+    nome = a.get_app_name()
+    target_sdk_version = a.get_effective_target_sdk_version()
+    minSdkVersion = a.get_min_sdk_version()
     if path.endswith(".apk"):
         lista_permissoes = []
         for i in app:
@@ -43,7 +50,12 @@ def sigpid(path):
    except:
    	os.remove(path)
    	print("Erro no arquivo")
-     
+    
+    
+@app.route('/<string:name>/')
+def hello(name):
+    return "Hello " + name  
+    
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -72,10 +84,10 @@ def predict():
             result=sigpid(path)
             if result =="Malware":
                 shutil.move(path, os.getcwd()+'/apk/Malwares/'+user_file.filename)
-                return jsonify(result)
+                return jsonify(result, nome, str(target_sdk_version), minSdkVersion, lista_permissoes)
             if result =="Benigno":
                 shutil.move(path, os.getcwd()+'/apk/Benignos/'+user_file.filename)
-                return jsonify(result)
+                return jsonify(result, nome, str(target_sdk_version), minSdkVersion, lista_permissoes)
             
 def contador(path,extension):
   list_dir = []
