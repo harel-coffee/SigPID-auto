@@ -24,7 +24,7 @@ O SigPID WEB API é uma ferramenta desenvolvida em Python para verificar se o ap
 
 ##  Instalação
 
-Para instalar a ferramenta basta fazer o [download](https://github.com/Malware-Hunter/SigPID.git) e descompacte em um diretório de sua preferencia. **Antes de executar baixe o Python**.
+Para instalar a ferramenta basta fazer o [download](https://github.com/Malware-Hunter/SigPID.git) e descompactar em um diretório de sua preferencia. **Antes de executar baixe o Python**.
 Você pode instalar as bibliotecas necessárias de forma automatizada por meio do comando **pip install**. A partir do Python 3.4, o pip é incluído por **padrão** com os instaladores binários do Python.
 Execute o comando abaixo no diretório raiz do SigPID onde encontra-se o arquivo requirements.txt
 ~~~
