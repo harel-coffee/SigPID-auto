@@ -5,7 +5,8 @@
 
 # Overview
 
-O SigPID WEB API é uma ferramenta desenvolvida em Python para verificar se o aplicativo possui malware. Sua predição é baseada em analise estática e aprendizado de maquina, por meio da analise de permissões do Android. Seu uso consiste em fazer o upload de um aplicativo ( APK ) onde a ferramenta retornara a predição em forma de arquivo JSON (JavaScript Object Notation).
+O SigPID WEB API é uma ferramenta desenvolvida em Python para verificar se o aplicativo possui malware. Sua predição é baseada em analise estática e aprendizado de maquina, por meio da analise de permissões do Android. Seu uso consiste em fazer o upload de um aplicativo ( APK ) onde a ferramenta retornara a predição em forma de arquivo JSON (JavaScript Object Notation). Nossa abordagem é baseada no estudo [ Significant Permission Identification for Machine-Learning-Based Android Malware Detection](https://ieeexplore.ieee.org/document/8255798) 
+
 
 ## Requisitos
 
