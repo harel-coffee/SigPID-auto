@@ -11,3 +11,4 @@ Por fim desenvolvemos uma [**API**](https://github.com/Malware-Hunter/SigPID/tre
 - Joner Mello
 - Diego Kreutz
 - Gustavo Cardozo
+- Vanderson Rocha
