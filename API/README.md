@@ -56,4 +56,5 @@ Microsoft Windows 10 Pro, compilação 19042, Memória: 32 GB, Processador: 11th
 ## Créditos
 - Joner Mello
 - Diego Kreutz
+- Vanderson Rocha
 - Gustavo Cardozo
